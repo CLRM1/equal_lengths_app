@@ -6,14 +6,15 @@
     }
 
     async function intro() {
-      await sleep(2000)
       document.getElementById("font").innerHTML = "<br> Take a slow, deep breath in through your nose. <br>"
-      await sleep(2000)
+      await sleep(5000)
       document.getElementById("font").innerHTML = "<br> As you inhale count to 5. <br>"
       await sleep(5000)
       document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth. <br>"
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> As you exhale count to 5.";
+      document.getElementById("font").innerHTML = "<br> As you exhale count to 5."
+      await sleep(5000)
+      window.location.href = "/restart";
     }
     intro();
 </script>
