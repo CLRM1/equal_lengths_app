@@ -1,4 +1,4 @@
-<p style="font-family:verdana;" id="font"></p>
+<p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
 
 <script>
     function sleep(ms) {
@@ -6,13 +6,13 @@
     }
 
     async function intro() {
-      document.getElementById("font").innerHTML = "<br> Take a slow, deep breath in through your nose. <br>"
+      document.getElementById("font").innerHTML = "<br> Take a slow, deep breath in through your nose. <br> "
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> As you inhale count to 5. <br>"
+      document.getElementById("font").innerHTML = "<br> As you inhale count to 5. <br> "
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth. <br>"
+      document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth. <br> "
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> As you exhale count to 5."
+      document.getElementById("font").innerHTML = "<br> As you exhale count to 5. <br> "
       await sleep(5000)
       window.location.href = "/restart";
     }
