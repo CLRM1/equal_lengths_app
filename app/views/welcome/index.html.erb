@@ -1,6 +1,20 @@
 <h1>welcome to the equal lengths meditation</h1>
 
-<ul>
-  <li><a href="/tasks">Task Index</a></li>
-  <li><a href="/tasks/new">New Task</a></li>
-</ul>
+
+<script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function intro() {
+      await sleep(2000)
+      document.write("Take a slow, deep breath in through your nose. <br>")
+      await sleep(2000)
+      document.write("<br> As you inhale count to 5. <br>")
+      await sleep(5000)
+      document.write("<br> Exhale slowly through your mouth. <br>")
+      await sleep(5000)
+      document.write("<br> As you exhale count to 5.");
+    }
+    intro();
+</script>
