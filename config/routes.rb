@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/', to: 'welcome#index'
   get '/meditations/equal_lengths', to: 'equal_lengths#show'
-  get 'restart', to: 'equal_lengths#restart'
+  get '/meditations/square_breathing', to: 'square_breathing#show'
+  get '/meditations/equal_lengths/restart', to: 'equal_lengths#restart'
+  get '/meditations/square_breathing/restart', to: 'square_breathing#restart'
+  get 'restart', to: 'restart#restart'
 end
