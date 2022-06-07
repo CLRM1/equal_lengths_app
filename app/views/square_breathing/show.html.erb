@@ -15,17 +15,14 @@
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
-
     async function intro() {
-      document.getElementById("font").innerHTML = "<br> Take a slow, deep breath in through your nose <br> "
-      await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> As you inhale count to 4 <br> . "
+      document.getElementById("font").innerHTML = "<br> Visualize drawing a square with a breath at each corner <br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> Breathe in through your nose, as you inhale count to 4 <br> . "
       await sleep(5000)
       document.getElementById("font").innerHTML = "<br> Hold the breath for a count of 4 <br> .."
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth <br> "
-      await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> As you exhale count to 4 <br> .: "
+      document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth, as you exhale count to 4 <br>.: "
       await sleep(5000)
       document.getElementById("font").innerHTML = "<br> Before inhaling, hold your breath for a count of 4 <br> :: "
       await sleep(5000)
