@@ -1,5 +1,16 @@
 <p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
 
+<!-- ideas for mvp audio:
+      1. page loads with a persistent button to link to a new page/refresh with audio
+      2. meditation welcome page for each meditation that has an audio or silent version-->
+<!-- pseudocode for unmute button.
+   1. Page loades with audio muted and unmute button displayed
+    2. Unmute button disapeears if no action after 5 seconds
+    3. Tap page, press space bar to make unmute button reappear
+    4. When unmute button is selected audio is enabled
+    5. Audio picks up at whatever part of meditation the user is current at
+
+    Alernate: play audio intro original function and enable mute button?-->
 <script>
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
