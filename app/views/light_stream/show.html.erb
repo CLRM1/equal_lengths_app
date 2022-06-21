@@ -1,0 +1,40 @@
+<p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
+
+<script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function intro() {
+      document.getElementById("font").innerHTML = "<br> Find a seat and start to bring your attention to your breath <br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> Breathe in through your nose for a count of 4<br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 3 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 4 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> And exhale <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> Breathe in again and imagine your favorite color of light is coming in along with the air<br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 3 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 4 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> Breathe the light out ✨ <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> Repeat. Allow the stream of light to fill your body with new energy <br> "
+      await sleep(3000)
+      window.location.href = "/restart?restart=light";
+    }
+    intro();
+</script>

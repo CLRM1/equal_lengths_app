@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/meditations/equal_lengths', to: 'equal_lengths#show'
   get '/meditations/square_breathing', to: 'square_breathing#show'
   get '/meditations/three_senses', to: 'three_senses#show'
+  get '/meditations/light_stream', to: 'light_stream#show'
+  get '/meditations/light_stream/restart', to: 'light_stream#restart'
   get '/meditations/three_senses/restart', to: 'three_senses#restart'
   get '/meditations/equal_lengths/restart', to: 'equal_lengths#restart'
   get '/meditations/square_breathing/restart', to: 'square_breathing#restart'

@@ -11,6 +11,8 @@ class RestartController < ApplicationController
       redirect_to '/meditations/square_breathing/restart'
     elsif params[:restart] == 'senses'
       redirect_to '/meditations/three_senses/restart'
+    elsif params[:restart] == 'light'
+      redirect_to '/meditations/light_stream/restart'
     end
   end
 end
