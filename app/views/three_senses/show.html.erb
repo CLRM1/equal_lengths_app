@@ -1,0 +1,30 @@
+<p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
+
+<script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function intro() {
+      document.getElementById("font").innerHTML = "<br> Take a seat, relax your shoulders and start to look at your surroundings <br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> Find 3 things you see and say them outloud one at a time <br> "
+      await sleep(5000)
+      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 3 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> Now, listen for 2 noises around you. Say them outloud one at a time <br> "
+      await sleep(4000)
+      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      await sleep(3000)
+      document.getElementById("font").innerHTML = "<br> Finally, focus on an object you are currently touching <br> "
+      await sleep(4000)
+      window.location.href = "/restart?restart=senses";
+    }
+    intro();
+</script>
