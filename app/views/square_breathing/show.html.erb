@@ -1,59 +1,55 @@
 <p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
 
-<!-- ideas for mvp audio:
-      1. page loads with a persistent button to link to a new page/refresh with audio
-      2. meditation welcome page for each meditation that has an audio or silent version-->
-<!-- pseudocode for unmute button.
-   1. Page loades with audio muted and unmute button displayed
-    2. Unmute button disapeears if no action after 5 seconds
-    3. Tap page, press space bar to make unmute button reappear
-    4. When unmute button is selected audio is enabled
-    5. Audio picks up at whatever part of meditation the user is current at
-
-    Alernate: play audio intro original function and enable mute button?-->
-<!-- Audio idea -->
-    <!-- <button onclick="enableMute()" type="button">Mute sound</button>
-<button onclick="disableMute()" type="button">Enable sound</button>
-<button onclick="checkMute()" type="button">Check muted status</button><br>
-
-<video id="myVideo" width="320" height="176" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML5 video.
-</video>
-
-<script>
-var vid = document.getElementById("myVideo");
-
-function enableMute() {
-  vid.muted = true;
-}
-
-function disableMute() {
-  vid.muted = false;
-}
-
-function checkMute() {
-  alert(vid.muted);
-}
-</script>  -->
-
 <script>
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
-    async function intro() {
-      document.getElementById("font").innerHTML = "<br> Visualize drawing a square with a breath at each corner <br> "
-      await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Breathe in through your nose, as you inhale count to 4 <br> . "
-      await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Hold the breath for a count of 4 <br> .."
-      await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Exhale slowly through your mouth, as you exhale count to 4 <br>.: "
-      await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Before inhaling, hold your breath for a count of 4 <br> :: "
-      await sleep(5000)
+    async function meditation() {
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> imagine drawing a square with your breath as you follow along <br><br> :: "
+      await sleep(4000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in through your nose"
+      await sleep(2000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in through your nose <br> breathe in <br><br> 1"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in through your nose <br> breathe in <br><br> 2"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in through your nose <br> breathe in <br><br> 3"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in through your nose <br> breathe in <br><br> 4"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> hold the breath for a count of 4"
+      await sleep(2000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> hold the breath for a count of 4 <br> hold <br><br> 1"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> hold the breath for a count of 4 <br> hold <br><br> 2"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> hold the breath for a count of 4 <br> hold <br><br> 3"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> hold the breath for a count of 4 <br> hold <br><br> 4"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> exhale slowly through your mouth "
+      await sleep(2000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> exhale slowly through your mouth <br> breathe out <br><br> 1"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> exhale slowly through your mouth <br> breathe out <br><br> 2"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> exhale slowly through your mouth <br> breathe out <br><br> 3"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> exhale slowly through your mouth <br> breathe out <br><br> 4"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> before inhaling hold your breath for a count of 4"
+      await sleep(2000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> before inhaling hold your breath for a count of 4 <br> hold <br><br> 1"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> before inhaling hold your breath for a count of 4 <br> hold <br><br> 2"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> before inhaling hold your breath for a count of 4 <br> hold <br><br> 3"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> before inhaling hold your breath for a count of 4 <br> hold <br><br> 4"
+      await sleep(1500)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> breathe in"
+      await sleep(2000)
       window.location.href = "/restart?restart=square";
     }
-    intro();
+    meditation();
 </script>
