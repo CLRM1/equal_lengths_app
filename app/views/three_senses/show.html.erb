@@ -1,28 +1,29 @@
 <p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
-
 <script>
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     async function intro() {
-      document.getElementById("font").innerHTML = "<br> Take a seat, relax your shoulders and start to look at your surroundings <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> start to relax your shoulders and begin looking at your surroundings"
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> Find 3 things you see and say them outloud one at a time <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> find 3 things you see and say them out loud one at a time"
       await sleep(5000)
-      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> find 3 things you see and say them out loud one at a time <br><br> 1"
       await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> find 3 things you see and say them out loud one at a time <br><br> 2"
       await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> 3 <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> find 3 things you see and say them out loud one at a time <br><br> 3"
       await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> Now, listen for 2 noises around you. Say them outloud one at a time <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> listen for 2 noises around you and say them out loud one at a time"
       await sleep(4000)
-      document.getElementById("font").innerHTML = "<br> 1 <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> listen for 2 noises around you and say them out loud one at a time <br><br> 1"
       await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> 2 <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> listen for 2 noises around you and say them out loud one at a time <br><br> 2"
       await sleep(3000)
-      document.getElementById("font").innerHTML = "<br> Finally, focus on an object you are currently touching <br> "
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> feel for 1 object you are touching and say the name of that object out loud"
+      await sleep(4000)
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> feel for 1 object you are touching and say the name of that object out loud <br><br> 1"
       await sleep(4000)
       window.location.href = "/restart?restart=senses";
     }
