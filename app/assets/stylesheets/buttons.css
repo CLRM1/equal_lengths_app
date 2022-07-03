@@ -20,3 +20,21 @@
   color:#000000
 } */
 
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(40, 39, 39, 0.38);
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(40, 39, 39, 0.795);
+}
