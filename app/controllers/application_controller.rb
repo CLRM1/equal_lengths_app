@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
   def redirect_to_https
-    redirect_to :protocol => "https://" unless (request.ssl? || request.local?)
+    redirect_to :protocol => "https://www." unless (request.ssl? || request.local?)
   end
   # private
   # def add_www_subdomain
