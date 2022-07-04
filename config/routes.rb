@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/meditations/equal_lengths/restart', to: 'equal_lengths#restart'
   get '/meditations/square_breathing/restart', to: 'square_breathing#restart'
   get 'restart', to: 'restart#restart'
+  match "*path" => redirect("https://www.micromeditations.com/%{path}"), :constraints => { :protocol => "http://" }
+  match "*path" => redirect("https://www.micromeditations.com/%{path}"), :constraints => { :subdomain => "" }
 end
