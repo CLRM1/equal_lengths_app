@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get '/meditations/square_breathing/restart', to: 'square_breathing#restart'
   get 'restart', to: 'restart#restart'
   get 'http://micromeditations.org', to: 'meditations#index'
+  get 'micromeditations.org', to: 'meditations#index'
 end
