@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get '/meditations/equal_lengths/restart', to: 'equal_lengths#restart'
   get '/meditations/square_breathing/restart', to: 'square_breathing#restart'
   get 'restart', to: 'restart#restart'
-  get 'http://micromeditations.com/', to: 'meditations#index'
+  get 'http://micromeditations.org', to: 'meditations#index'
 end
