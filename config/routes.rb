@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  match "*path" => redirect("https://www.micromeditations.org/%{path}"), :constraints => { :protocol => "http://" }
+  match "*path" => redirect("https://www.micromeditations.org/%{path}"), :constraints => { :subdomain => "" }
   root 'meditations#index'
   get '/meditations', to: 'meditations#index'
   get '/meditations/equal_lengths', to: 'equal_lengths#show'
@@ -11,6 +13,4 @@ Rails.application.routes.draw do
   get '/meditations/equal_lengths/restart', to: 'equal_lengths#restart'
   get '/meditations/square_breathing/restart', to: 'square_breathing#restart'
   get 'restart', to: 'restart#restart'
-  # get 'http://micromeditations.org', to: 'meditations#index'
-  # get 'micromeditations.org', to: 'meditations#index'
 end
