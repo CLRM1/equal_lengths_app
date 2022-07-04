@@ -22,6 +22,7 @@ module EqualLengthsApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     # Force SSL redirect
+    config.middleware.insert_before ActionDispatch::Cookies, "Rack::SSL"
     config.force_ssl = true
     config.ssl_options = { hsts: { preload: true, expires: 1.year, subdomains: true }, redirect: { status: 307, port: 81 } }
     # Settings in config/environments/* take precedence over those specified here.
