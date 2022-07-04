@@ -20,7 +20,7 @@
   color:#000000
 } */
 
-a {
+.link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   height: 50px;
@@ -33,7 +33,7 @@ a {
   place-content: center;
 }
 
-a:hover {
+.link:hover {
   color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: rgba(40, 39, 39, 0.795);
