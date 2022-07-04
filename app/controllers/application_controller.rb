@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
   
   # before_action :add_www_subdomain
 
+  private
+  def redirect_to_https
+    redirect_to :protocol => "https://" unless (request.ssl? || request.local?)
+  end
   # private
   # def add_www_subdomain
   #   unless /^www/.match(request.host)
