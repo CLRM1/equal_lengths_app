@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  match "http://micromeditations.org/", to: redirect("https://www.micromeditations.org/"), via: [:get]
-  match "micromeditations.org/", to: redirect("https://www.micromeditations.org/"), via: [:get]
   root 'meditations#index'
   get '/meditations', to: 'meditations#index'
   get '/meditations/equal_lengths', to: 'equal_lengths#show'
