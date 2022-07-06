@@ -23,7 +23,7 @@ module EqualLengthsApp
     config.load_defaults 5.2
     # Force SSL redirect
     config.force_ssl = true
-    config.ssl_options = { hsts: { preload: true, expires: 1.year, subdomains: true }, redirect: { host: "micromeditations.org" } }
+    config.ssl_options = { hsts: { preload: true, expires: 1.year, subdomains: true }, redirect: { status: 307, port: 81 } }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
