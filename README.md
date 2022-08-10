@@ -1,3 +1,3 @@
 # README
 
-Micro meditations is a free guided meditation and breathing exercise app.
+Micro meditations is a free meditation and breathing exercise app.
