@@ -1,4 +1,18 @@
 <p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
+  
+  <div style="padding-top:50px; padding-bottom:0px; text-align:center">
+  
+    <audio 
+    controls
+
+    src= <%= asset_path("equal_breaths.mp3")%>>
+        Your browser does not support the
+        <code>audio</code> element.
+    </audio>
+  
+  
+  </div>
+
 
 <script>
     function sleep(ms) {
@@ -6,7 +20,7 @@
     }
 
     async function meditation() {
-      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> take a deep breath in through your nose <br>"
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> take a deep breath in through your nose <br><br>&nbsp;&nbsp;"
       await sleep(2000)
       document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> take a deep breath in through your nose <br><br> 1"
       await sleep(2000)
@@ -16,7 +30,7 @@
       await sleep(2000)
       document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br> take a deep breath in through your nose <br><br> 4"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br>  exhale slowly through your mouth"
+      document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br>  exhale slowly through your mouth <br><br>&nbsp;&nbsp;"
       await sleep(2000)
       document.getElementById("font").innerHTML = "<br><br><br><br><br><br><br>  exhale slowly through your mouth <br><br> 1"
       await sleep(2000)
