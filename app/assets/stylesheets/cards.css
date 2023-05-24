@@ -19,7 +19,7 @@
   animation: expandContract 20s infinite;
 }
 
-.container {
+.containers {
   display: flex;
   align-items: center;
   justify-content: center;
