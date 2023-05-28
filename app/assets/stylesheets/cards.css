@@ -17,6 +17,11 @@
   border-radius: 50%;
   background-color: #29CCE5;
   animation: expandContract 20s infinite;
+  animation-play-state: running;
+}
+
+.paused {
+  animation-play-state: paused;
 }
 
 .containers {

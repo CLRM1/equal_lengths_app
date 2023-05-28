@@ -1,49 +1,51 @@
-  
   <div style="padding-top:50px; text-align:center">
   <p style="font-family:verdana; font-size:20px; text-align:center" id="font"></p>
 
   <div class="containers">
-  
-  <p class="circle"></p>
+  <p id="js-toggle" class="circle "></p>
   <br><br><br><br><br>  <br><br><br><br><br>
+
   </div>
     <audio 
+    id="audioID"
     controls
+    onplay="meditation()"
     src= <%= asset_path("equal_breaths.mp3")%>>
         Your browser does not support the
         <code>audio</code> element.
     </audio>
-  </div>
 
-
-<script>
+    <script>
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function meditation = () => {
-      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose <br><br>&nbsp;&nbsp;"
+    async function meditation () {
+      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose <br><br> 1"
+      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose <br><br> 2"
+      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose <br><br> 3"
+      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose <br><br> 4"
+      document.getElementById("font").innerHTML = "<br><br><br> take a deep breath in through your nose"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth <br><br>&nbsp;&nbsp;"
+      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth <br><br> 1"
+      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth <br><br> 2"
+      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth <br><br> 3"
+      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth"
       await sleep(2000)
-      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth <br><br> 4"
+      document.getElementById("font").innerHTML = "<br><br><br>  exhale slowly through your mouth"
       await sleep(2000)
 
       window.location.href = "/restart?restart=equal";
     }
-    meditation();
 </script>
+
+</div>
+
+
