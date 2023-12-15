@@ -2,4 +2,8 @@
 
 Micro meditations is a free meditation and breathing exercise app.
 
-Visit the [app](https://www.micromeditations.org)!
+# Local Setup
+
+$ bundle install
+$ bundle update
+$ rails s
