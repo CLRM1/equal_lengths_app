@@ -4,6 +4,6 @@ Micro meditations is a free meditation and breathing exercise app built with Rub
 
 # Local Setup
 
-- $ bundle install
-- $ bundle update
-- $ rails s
+- `$ bundle install`
+- `$ bundle update`
+- `$ rails s`
